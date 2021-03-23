@@ -30,7 +30,12 @@ namespace FinalProject.Models
 
     public enum ServiceType
     {
-        Photo = 1,
-        Video = 2
+        Select = 1,
+        WeddingA = 2,
+        WeddingB = 3,
+        StudioPotrait = 4,
+        AmbientShoot = 5,
+        ProductShoot =6
+
     }
 }

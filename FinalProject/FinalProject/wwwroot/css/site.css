@@ -1,7 +1,7 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 body{
-   
+
 }
 
 a.navbar-brand {
@@ -135,6 +135,41 @@ body {
 .service-btn{
     padding-bottom:10px;
 }
+.simpleModal{
+    display:none;
+    position:fixed;
+    z-index:1;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    overflow:auto;
+}
+.modal-content{
+    background-color:#f4f4f4;
+    margin:20% auto;
+    padding:20px;
+    width:70%;
+    box-shadow:0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0;
+    animation-name:modalopen;
+    animation-duration:1s;
+}
+.closeBtn{
+    color: #ccc;
+
+    font-size: 30px;
+}
+.closeBtn:hover, .closeBtn:focus {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+@keyframes modalopen{
+   from{opacity: 0}
+   to{opacity: 1}
+}
+
 /* Order Form
 ----------------------------------------------------*/
 #order {
