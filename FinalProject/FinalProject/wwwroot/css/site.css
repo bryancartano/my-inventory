@@ -128,47 +128,57 @@ body {
     padding-bottom: 5px;
     padding-top: 20px;
 }
-#contactme{
-    margin-top:20px;
+
+#contactme {
+    margin-top: 20px;
 }
 
-.service-btn{
-    padding-bottom:10px;
+.service-btn {
+    padding-bottom: 10px;
 }
-.simpleModal{
-    display:none;
-    position:fixed;
-    z-index:1;
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    overflow:auto;
+
+.simpleModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
 }
-.modal-content{
-    background-color:#f4f4f4;
-    margin:20% auto;
-    padding:20px;
-    width:70%;
-    box-shadow:0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0;
-    animation-name:modalopen;
-    animation-duration:1s;
+
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0;
+    animation-name: modalopen;
+    animation-duration: 1s;
 }
-.closeBtn{
+
+.closeBtn {
     color: #ccc;
-
     font-size: 30px;
 }
-.closeBtn:hover, .closeBtn:focus {
-   color: #000;
-   text-decoration: none;
-   cursor: pointer;
+
+    .closeBtn:hover, .closeBtn:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+@keyframes modalopen {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
-@keyframes modalopen{
-   from{opacity: 0}
-   to{opacity: 1}
-}
 
 /* Order Form
 ----------------------------------------------------*/
