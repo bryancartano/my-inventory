@@ -15,5 +15,7 @@ namespace FinalProject.Data
           : base(options)
         {
         }
+        public DbSet<Models.Order> Orders { get; set; }
+        public DbSet<Models.Service> Services { get; set; }
     }
 }

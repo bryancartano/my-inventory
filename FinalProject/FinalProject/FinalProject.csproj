@@ -5,6 +5,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20210327115300_InitialCreate.cs" />
+    <Compile Remove="Migrations\20210327115300_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20210327190404_AddOrdersAddServices.cs" />
+    <Compile Remove="Migrations\20210327190404_AddOrdersAddServices.Designer.cs" />
+    <Compile Remove="Migrations\20210327190648_AddOrdersAddServices.cs" />
+    <Compile Remove="Migrations\20210327190648_AddOrdersAddServices.Designer.cs" />
+    <Compile Remove="Migrations\20210327191140_Add-Migration OrderForm.cs" />
+    <Compile Remove="Migrations\20210327191140_Add-Migration OrderForm.Designer.cs" />
+    <Compile Remove="Migrations\20210327191611_AddOrders.cs" />
+    <Compile Remove="Migrations\20210327191611_AddOrders.Designer.cs" />
+    <Compile Remove="Migrations\20210327192621_OrdersServices.cs" />
+    <Compile Remove="Migrations\20210327192621_OrdersServices.Designer.cs" />
+    <Compile Remove="Migrations\20210327192940_OrderServicesAdd.cs" />
+    <Compile Remove="Migrations\20210327192940_OrderServicesAdd.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.9" />
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.9" />
@@ -16,6 +33,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>

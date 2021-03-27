@@ -1,0 +1,33 @@
+﻿@model FinalProject.Models.PaymentMethod
+
+@{
+    ViewData["Title"] = "Payment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<center>
+    <section id="paymentBody" class="container">
+        <h1>Payment</h1>
+
+        <h4>PaymentMethod</h4>
+        <hr />
+        <form asp-action="Payment" id="payment">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PayMethod" class="control-label"></label>
+                <select asp-for="PayMethod" class="form-control" asp-items="Html.GetEnumSelectList<Pmethod>()"></select>
+                <span asp-validation-for="PayMethod" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+        <div>
+            <a asp-controller="Order" asp-action="Order">Back to List</a>
+        </div>
+    </section>
+</center>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
