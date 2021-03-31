@@ -1,0 +1,341 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 50px; /* Vertically center the text there */
+}
+
+.icon {
+    font-size: 20px;
+    padding-top: 17px;
+}
+
+/* Gallery  
+----------------------------------------------------*/
+
+#gallery {
+    text-align: center;
+    padding: 3% 15%;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 7vh;
+}
+
+.gT {
+}
+
+.high-pic {
+    height: 300px;
+    width: 275px;
+}
+
+.highlight-column {
+    padding: 0% 1%;
+}
+
+.high-pic:hover {
+    transform: scale(1.1);
+}
+
+
+/* About 
+----------------------------------------------------*/
+#About {
+}
+
+#aboutT {
+    padding-top: 50px;
+}
+
+.about-pic {
+    width: 350px;
+}
+
+#contactme {
+    margin-bottom: 12vh;
+}
+
+/* Service 
+----------------------------------------------------*/
+#contactme {
+    margin-top: 20px;
+}
+
+#services {
+    padding-bottom: 5px;
+    padding-top: 20px;
+    margin-bottom: 7vh;
+}
+
+
+.accceptb {
+    margin-right: 10px;
+}
+
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 10% auto;
+    padding: 5px;
+    width: 75%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0;
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
+
+
+.service-btn {
+    padding-bottom: 5vh;
+}
+
+.simpleModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+
+
+.closeBtn {
+    color: #ccc;
+    font-size: 30px;
+}
+
+    .closeBtn:hover, .closeBtn:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+@keyframes modalopen {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/* Order Form
+----------------------------------------------------*/
+#orderbody {
+    width: 450px;
+    background-color: rgb(211,211,211);
+    border-radius: 25px;
+    margin-top: 3vh;
+    margin-bottom: 10vh;
+    padding-bottom: 25px;
+}
+
+#order {
+    padding: 2px 50px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+#servicesb {
+    padding-bottom: 20px;
+}
+
+
+/* Login
+----------------------------------------------------*/
+
+hr {
+    background-color: #fff;
+}
+
+#forgot-password {
+    color: #E9E9E9;
+}
+
+#Login {
+    padding: 30px 40px;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    background-color: #696969;
+    color: #fff;
+    margin-top: 5vh;
+    border-radius: 25px;
+    margin-bottom: 75px;
+}
+
+.loginT {
+    color: #fff;
+}
+
+/* Registration
+----------------------------------------------------*/
+
+hr {
+    background-color: #fff;
+}
+
+#registration {
+    padding: 30px 40px;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    background-color: #696969;
+    color: #fff;
+    margin-top: 5vh;
+    border-radius: 25px;
+}
+
+/* Home
+----------------------------------------------------*/
+
+#index {
+    background-image: url(../Pic/bry2.jpg);
+    background-size: cover;
+    padding: 15%;
+    text-align: center;
+}
+
+#servicesH {
+    font-size: 1rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+#galleryH {
+    text-align: center;
+    padding: 3% 15%;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 7vh;
+}
+
+.high-pich {
+    height: 300px;
+    width: 300px;
+}
+
+.highlight-columns {
+    padding: 2% 3%;
+}
+
+.high-pich:hover {
+    transform: scale(1.1);
+}
+
+.homebg {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.servp {
+}
+
+
+/* Payment Method
+----------------------------------------------------*/
+#paymentBody {
+    width: 450px;
+    background-color: rgb(211,211,211);
+    border-radius: 25px;
+    margin-top: 3vh;
+    margin-bottom: 10vh;
+    padding-bottom: 25px;
+}
+
+#payment {
+    padding: 2px 50px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin-top: 1vh;
+}
