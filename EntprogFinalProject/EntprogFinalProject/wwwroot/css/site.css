@@ -1,8 +1,12 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 body {
-    margin: 0;
-    padding: 0;
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
 }
 
 a.navbar-brand {
@@ -137,7 +141,9 @@ body {
     padding-top: 20px;
     margin-bottom: 7vh;
 }
-
+#searchservices{
+    padding-top:20px;
+}
 
 .accceptb {
     margin-right: 10px;
@@ -267,19 +273,37 @@ hr {
 
 /* Home
 ----------------------------------------------------*/
-
-#index {
+.index {
     background-image: url(../Pic/bry2.jpg);
     background-size: cover;
     padding: 15%;
     text-align: center;
-}
+    position:relative;
+    opacity:0.70;
+    background-position:center;
+    background-repeat:no-repeat;
+    min-height:100%;
 
+    background-attachment:fixed;
+}
+.indexttext{
+    position:absolute;
+    top:50%;
+    width:70%;
+    text-align:center;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+}
+.indexttext .border-index{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+    border:none;
+}
 #servicesH {
-    font-size: 1rem;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
+    text-align: center;
+    padding: 50px 80px;
 }
 
 #galleryH {

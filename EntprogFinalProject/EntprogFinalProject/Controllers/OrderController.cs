@@ -27,8 +27,10 @@ namespace EntprogFinalProject.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult OrderForm(Order forms)
+        public IActionResult OrderForm(OrderViewModel forms)
         {
+            var service = _context.Services.Where(s => s.SerKey == forms.SerKey).SingleOrDefault();
+
             var form = new Order()
             {
                 Firstname = forms.Firstname,
@@ -36,7 +38,7 @@ namespace EntprogFinalProject.Controllers
                 Email = forms.Email,
                 Address = forms.Address,
                 PhoneNumber = forms.PhoneNumber,
-                Service = forms.Service
+                Service = service
             };
 
             _context.Orders.Add(form);

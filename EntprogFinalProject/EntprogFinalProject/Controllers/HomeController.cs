@@ -1,4 +1,5 @@
 ﻿using EntprogFinalProject.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -18,23 +19,27 @@ namespace EntprogFinalProject.Controllers
             _logger = logger;
         }
 
+        [Authorize]
         public IActionResult Index()
         {
             return View();
         }
-
+        [Authorize]
         public IActionResult Gallery()
         {
             return View();
         }
+        [Authorize]
         public IActionResult About()
         {
             return View();
         }
+        [Authorize]
         public IActionResult Service()
         {
             return View();
         }
+        [Authorize]
         public IActionResult Privacy()
         {
             return View();

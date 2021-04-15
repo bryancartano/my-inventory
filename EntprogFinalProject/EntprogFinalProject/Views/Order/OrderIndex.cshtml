@@ -55,9 +55,8 @@
                 @Html.DisplayFor(modelItem => item.Service.ServType)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.OrderKey">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.OrderKey">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.OrderKey">Delete</a>
+                <a asp-action="EditForm" asp-route-id="@item.OrderKey">Edit</a> |
+                <a asp-action="DeleteForm" asp-route-id="@item.OrderKey">Delete</a>
             </td>
         </tr>
 }

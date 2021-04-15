@@ -1,18 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-using System.ComponentModel.DataAnnotations;
-
 namespace EntprogFinalProject.Models
 {
-    public class Order
+    public class OrderViewModel
     {
-        [Key]
-        public int OrderKey { get; set; }
-        [Required(ErrorMessage = "First Name is Required")]
-        [Display(Name = "First Name")]
         public string Firstname { get; set; }
         [Required(ErrorMessage = "Last Name is Required")]
         [Display(Name = "Last Name")]
@@ -23,14 +18,7 @@ namespace EntprogFinalProject.Models
         [DataType(DataType.MultilineText)]
         public string Address { get; set; }
         public string PhoneNumber { get; set; }
-        [Required(ErrorMessage = "Choose from the choices")]
-        public virtual Service Service { get; set; }
-  
-    }
-    public class Service
-    {
-        [Key]
+
         public int SerKey { get; set; }
-        public string ServType { get; set; }
     }
 }

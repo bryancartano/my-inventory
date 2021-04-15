@@ -69,7 +69,7 @@ namespace EntprogFinalProject.Migrations
 
                     b.HasKey("SerKey");
 
-                    b.ToTable("Services");
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("EntprogFinalProject.Models.Order", b =>
@@ -78,7 +78,7 @@ namespace EntprogFinalProject.Migrations
                         .WithMany()
                         .HasForeignKey("ServiceSerKey");
 
-                    b.Navigation("Service");
+                    b.Navigation("Order");
                 });
 #pragma warning restore 612, 618
         }
