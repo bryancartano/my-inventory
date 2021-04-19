@@ -11,6 +11,7 @@ using Finals.Models;
 using System.Net;
 using System.Net.Mail;
 
+
 namespace Finals.Controllers
 {
     public class OrderController : Controller
@@ -23,6 +24,8 @@ namespace Finals.Controllers
             }
             public IActionResult OrderIndex()
             {
+            
+
                 var orderlist = _context.Orders.Include(p => p.Service).ToList();
                 return View(orderlist);
             }
@@ -123,5 +126,6 @@ namespace Finals.Controllers
                 return RedirectToAction("OrderIndex");
             }
         
+
     }
 }
